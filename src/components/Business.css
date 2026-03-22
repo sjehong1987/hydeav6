@@ -1,0 +1,71 @@
+.business {
+  background: #fafafa;
+  padding: 100px 40px;
+}
+
+.business-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.business-subtitle {
+  font-size: 2.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+.business-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.business-cta {
+  padding: 12px 40px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: #1a1a1a;
+  color: white;
+  border: 2px solid #1a1a1a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.business-cta:hover {
+  background: transparent;
+  color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+  .business {
+    padding: 60px 20px;
+  }
+
+  .business-subtitle {
+    font-size: 1.75rem;
+  }
+
+  .business-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .business {
+    padding: 40px 15px;
+  }
+
+  .business-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .business-description {
+    font-size: 0.9rem;
+  }
+}

@@ -1,64 +1,52 @@
-import React, { useState } from 'react'
-import './Header.css'
+import React, { useState } from 'react';
+import './Header.css';
 
-const Header = ({ language, setLanguage }) => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+const Header = ({ lang, setLang, t }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  const content = {
-    en: {
-      brand: 'HYDEA',
-      tagline: 'HYDRATION + IDEA',
-      nav: ['OUR STORY', 'PRODUCTS', 'BUSINESS', 'CONTACT']
-    },
-    ko: {
-      brand: 'HYDEA',
-      tagline: '수분 + 아이디어',
-      nav: ['우리의 이야기', '제품', '비즈니스', '연락처']
-    },
-    th: {
-      brand: 'HYDEA',
-      tagline: 'การให้ความชุ่มชื้น + ไอเดีย',
-      nav: ['เรื่องราวของเรา', 'สินค้า', 'ธุรกิจ', 'ติดต่อ']
-    }
-  }
-
-  const currentContent = content[language] || content.en
+  const languages = [
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'th', name: 'ภาษาไทย', flag: '🇹🇭' }
+  ];
 
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">
-          <h1>{currentContent.brand}</h1>
-          <p className="tagline">{currentContent.tagline}</p>
-        </div>
+        <a href="/" className="logo">
+          <span className="logo-text">HYDEA</span>
+          <span className="logo-sub">HYDRATION + IDEA</span>
+        </a>
 
-        <nav className={`nav ${mobileMenuOpen ? 'active' : ''}`}>
-          {currentContent.nav.map((item, index) => (
-            <a key={index} href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>
-              {item}
-            </a>
-          ))}
+        <nav className="nav-desktop">
+          <a href="#story">{t.story}</a>
+          <a href="#products">{t.products}</a>
+          <a href="#business">{t.business}</a>
+          <a href="#contact">{t.contact}</a>
         </nav>
 
-        <div className="header-right">
-          <button 
-            className="language-btn"
-            onClick={() => setLanguage(language === 'en' ? 'ko' : language === 'ko' ? 'th' : 'en')}
-          >
-            {language.toUpperCase()}
+        <div className="lang-selector">
+          <button className="lang-btn" onClick={() => setIsOpen(!isOpen)}>
+            {languages.find(l => l.code === lang).flag} {languages.find(l => l.code === lang).name}
           </button>
-          <button 
-            className="mobile-menu-btn"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+          {isOpen && (
+            <div className="lang-dropdown">
+              {languages.map((l) => (
+                <button
+                  key={l.code}
+                  onClick={() => {
+                    setLang(l.code);
+                    setIsOpen(false);
+                  }}
+                >
+                  {l.flag} {l.name}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

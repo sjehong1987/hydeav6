@@ -1,52 +1,38 @@
-import React from 'react'
-import './Footer.css'
+import React from 'react';
+import './Footer.css';
 
-const Footer = ({ language }) => {
-  const content = {
-    en: {
-      brand: 'HYDEA',
-      tagline: 'HYDRATION + IDEA',
-      copyright: '© 2026 HYDEA. All rights reserved.',
-      links: ['Privacy Policy', 'Terms of Service', 'Contact']
-    },
-    ko: {
-      brand: 'HYDEA',
-      tagline: '수분 + 아이디어',
-      copyright: '© 2026 HYDEA. 모든 권리 보유.',
-      links: ['개인정보 보호정책', '서비스 약관', '연락처']
-    },
-    th: {
-      brand: 'HYDEA',
-      tagline: 'การให้ความชุ่มชื้น + ไอเดีย',
-      copyright: '© 2026 HYDEA. สงวนลิขสิทธิ์',
-      links: ['นโยบายความเป็นส่วนตัว', 'เงื่อนไขการให้บริการ', 'ติดต่อ']
-    }
-  }
-
-  const currentContent = content[language] || content.en
-
+const Footer = ({ t, nav }) => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-content">
-          <div className="footer-brand">
-            <h3>{currentContent.brand}</h3>
-            <p>{currentContent.tagline}</p>
+        <div className="footer-brand">
+          <h2 className="footer-logo">HYDEA</h2>
+          <p className="footer-tagline">HYDRATION + IDEA</p>
+        </div>
+        
+        <div className="footer-links">
+          <div className="footer-nav">
+            <a href="#story">{nav.story}</a>
+            <a href="#products">{nav.products}</a>
+            <a href="#business">{nav.business}</a>
+            <a href="#contact">{nav.contact}</a>
           </div>
-
-          <div className="footer-links">
-            {currentContent.links.map((link, index) => (
-              <a key={index} href="#">{link}</a>
-            ))}
+          
+          <div className="footer-contact">
+            <a href={`mailto:${t.email}`} className="footer-email">{t.email}</a>
+            <a href="https://instagram.com/hydea.official" target="_blank" rel="noopener noreferrer" className="footer-social">
+              {t.instagram}
+            </a>
           </div>
         </div>
-
+        
         <div className="footer-bottom">
-          <p>{currentContent.copyright}</p>
+          <p className="copyright">© 2026 HYDEA. All rights reserved.</p>
+          <div className="made-with">Made with Manus</div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

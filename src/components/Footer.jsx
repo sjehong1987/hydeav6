@@ -20,7 +20,7 @@ const Footer = ({ t, nav }) => {
           
           <div className="footer-contact">
             <a href={`mailto:${t.email}`} className="footer-email">{t.email}</a>
-            <a href="https://instagram.com/hydea.official" target="_blank" rel="noopener noreferrer" className="footer-social">
+            <a href="https://instagram.com/hydea_official" target="_blank" rel="noopener noreferrer" className="footer-social">
               {t.instagram}
             </a>
           </div>

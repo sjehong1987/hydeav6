@@ -169,7 +169,7 @@ vercel --prod
 
 ```
 VITE_API_URL=https://api.hydea.co
-VITE_CONTACT_EMAIL=contact@hydea.co
+VITE_CONTACT_EMAIL=sales@hydrationidea.com
 ```
 
 ## 주요 기능

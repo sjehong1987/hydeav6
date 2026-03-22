@@ -27,21 +27,23 @@ const Footer = ({ language }) => {
 
   return (
     <footer className="footer">
-      <div className="footer-content">
-        <div className="footer-brand">
-          <h3>{currentContent.brand}</h3>
-          <p>{currentContent.tagline}</p>
+      <div className="footer-container">
+        <div className="footer-content">
+          <div className="footer-brand">
+            <h3>{currentContent.brand}</h3>
+            <p>{currentContent.tagline}</p>
+          </div>
+
+          <div className="footer-links">
+            {currentContent.links.map((link, index) => (
+              <a key={index} href="#">{link}</a>
+            ))}
+          </div>
         </div>
 
-        <div className="footer-links">
-          {currentContent.links.map((link, index) => (
-            <a key={index} href="#">{link}</a>
-          ))}
+        <div className="footer-bottom">
+          <p>{currentContent.copyright}</p>
         </div>
-      </div>
-
-      <div className="footer-bottom">
-        <p>{currentContent.copyright}</p>
       </div>
     </footer>
   )

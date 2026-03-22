@@ -1,71 +1,62 @@
 .business {
-  background: #fafafa;
-  padding: 100px 40px;
-}
-
-.business-content {
-  max-width: 800px;
-  margin: 0 auto;
+  background: #fdfdfd;
+  padding: 150px 0;
   text-align: center;
 }
 
+.business-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 .business-subtitle {
-  font-size: 2.5rem;
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 600;
-  margin-bottom: 30px;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 40px;
   color: #1a1a1a;
+  letter-spacing: -1px;
 }
 
 .business-description {
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  line-height: 2;
   color: #666;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  font-weight: 300;
 }
 
 .business-cta {
-  padding: 12px 40px;
-  font-size: 0.9rem;
+  padding: 15px 45px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   background: #1a1a1a;
   color: white;
-  border: 2px solid #1a1a1a;
+  border: 1px solid #1a1a1a;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   text-transform: uppercase;
 }
 
 .business-cta:hover {
   background: transparent;
   color: #1a1a1a;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 768px) {
-  .business {
-    padding: 60px 20px;
-  }
-
-  .business-subtitle {
-    font-size: 1.75rem;
-  }
-
-  .business-description {
-    font-size: 1rem;
-  }
+  .business { padding: 100px 0; }
+  .business-subtitle { font-size: 2.5rem; }
+  .business-description { font-size: 1rem; }
 }
 
 @media (max-width: 480px) {
-  .business {
-    padding: 40px 15px;
-  }
-
-  .business-subtitle {
-    font-size: 1.25rem;
-  }
-
-  .business-description {
-    font-size: 0.9rem;
-  }
+  .business { padding: 80px 0; }
+  .business-subtitle { font-size: 2rem; }
 }

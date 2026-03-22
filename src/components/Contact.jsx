@@ -74,7 +74,7 @@ const Contact = ({ language }) => {
 
   return (
     <section id="contact" className="contact">
-      <div className="container">
+      <div className="contact-container">
         <h2 className="section-title">{currentContent.title}</h2>
         <h3 className="contact-subtitle">{currentContent.subtitle}</h3>
         <p className="contact-description">{currentContent.description}</p>
@@ -109,8 +109,14 @@ const Contact = ({ language }) => {
           </form>
 
           <div className="contact-info">
-            <p><strong>Email:</strong> <a href={`mailto:${currentContent.contact.email}`}>{currentContent.contact.email}</a></p>
-            <p><strong>Social:</strong> <a href="https://instagram.com/hydea.official" target="_blank" rel="noopener noreferrer">{currentContent.contact.social}</a></p>
+            <div className="contact-info-item">
+              <h4>Email</h4>
+              <p><a href={`mailto:${currentContent.contact.email}`}>{currentContent.contact.email}</a></p>
+            </div>
+            <div className="contact-info-item">
+              <h4>Social</h4>
+              <p><a href="https://instagram.com/hydea.official" target="_blank" rel="noopener noreferrer">{currentContent.contact.social}</a></p>
+            </div>
           </div>
         </div>
       </div>

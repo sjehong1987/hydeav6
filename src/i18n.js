@@ -37,11 +37,43 @@ export const translations = {
       title: "CONTACT",
       subtitle: "Start your skin's new journey.",
       content: "Whether you're interested in our products, business partnerships, or vending machine installation — we'd love to hear from you.",
-      button: "LEARN MORE"
+      button: "LEARN MORE",
+      // GET IN TOUCH cards
+      cardEmail: "EMAIL",
+      cardPhone: "PHONE",
+      cardLocation: "LOCATION",
+      // Form
+      formTitle: "Send us a message",
+      formDesc: "Fill out the form below and we'll get back to you within 24 hours.",
+      labelName: "Full Name",
+      labelCompany: "Company",
+      labelPhone: "Phone",
+      labelEmail: "Email",
+      labelWebsite: "Website",
+      labelLocation: "Preferred Location",
+      labelInquiry: "Inquiry Type",
+      labelMessage: "Message",
+      placeholderName: "Your full name",
+      placeholderCompany: "Company name (optional)",
+      placeholderPhone: "+66 XX XXX XXXX",
+      placeholderEmail: "your@email.com",
+      placeholderWebsite: "https://yourwebsite.com",
+      placeholderLocation: "e.g. Phuket, Bangkok",
+      placeholderMessage: "Tell us about your inquiry...",
+      radioProduct: "Product Inquiry",
+      radioPartner: "Partnership / Vending Machine",
+      radioOther: "Other",
+      submitBtn: "SEND MESSAGE",
+      sending: "SENDING...",
+      successTitle: "Thank you!",
+      successMsg: "Your message has been sent successfully. We'll get back to you soon.",
+      sendAnother: "Send another message",
+      errorMsg: "Something went wrong. Please email us directly at sales@hydrationidea.com",
+      quote: '"Your skin knows what your eyes don\'t."'
     },
     footer: {
-      email: "contact@hydea.co",
-      instagram: "@hydea.official"
+      email: "sales@hydrationidea.com",
+      instagram: "@hydea_official"
     }
   },
   th: {
@@ -74,7 +106,7 @@ export const translations = {
       number: "03",
       title: "ธุรกิจ",
       subtitle: "เริ่มต้นธุรกิจความงามของคุณเอง",
-      content: "ตู้จำหน่าย HYDEA มอบโอกาสทางธุรกิจที่ลงทุนน้อยแต่ผลตอบแทนสูง เลือกทำเลดีในแหล่งท่องเที่ยว และปล่อยให้เครื่องทำงานแทนคุณตลอด 24 ชั่วโมง 7 วันต่อ주 โดยไม่ต้องใช้พนักงาน",
+      content: "ตู้จำหน่าย HYDEA มอบโอกาสทางธุรกิจที่ลงทุนน้อยแต่ผลตอบแทนสูง เลือกทำเลดีในแหล่งท่องเที่ยว และปล่อยให้เครื่องทำงานแทนคุณตลอด 24 ชั่วโมง 7 วันต่อสัปดาห์ โดยไม่ต้องใช้พนักงาน",
       button: "อ่านเพิ่มเติม"
     },
     contact: {
@@ -82,11 +114,43 @@ export const translations = {
       title: "ติดต่อ",
       subtitle: "เริ่มต้นการเดินทางใหม่ของผิวคุณ",
       content: "ไม่ว่าคุณจะสนใจสินค้าของเรา ความร่วมมือทางธุรกิจ หรือการติดตั้งตู้จำหน่าย — เรายินดีที่จะรับฟังจากคุณ",
-      button: "อ่านเพิ่มเติม"
+      button: "อ่านเพิ่มเติม",
+      // GET IN TOUCH cards
+      cardEmail: "อีเมล",
+      cardPhone: "โทรศัพท์",
+      cardLocation: "สถานที่",
+      // Form
+      formTitle: "ส่งข้อความถึงเรา",
+      formDesc: "กรอกแบบฟอร์มด้านล่าง เราจะตอบกลับภายใน 24 ชั่วโมง",
+      labelName: "ชื่อ-นามสกุล",
+      labelCompany: "บริษัท",
+      labelPhone: "โทรศัพท์",
+      labelEmail: "อีเมล",
+      labelWebsite: "เว็บไซต์",
+      labelLocation: "สถานที่ที่ต้องการ",
+      labelInquiry: "ประเภทการสอบถาม",
+      labelMessage: "ข้อความ",
+      placeholderName: "ชื่อเต็มของคุณ",
+      placeholderCompany: "ชื่อบริษัท (ไม่บังคับ)",
+      placeholderPhone: "+66 XX XXX XXXX",
+      placeholderEmail: "your@email.com",
+      placeholderWebsite: "https://yourwebsite.com",
+      placeholderLocation: "เช่น ภูเก็ต, กรุงเทพ",
+      placeholderMessage: "บอกเราเกี่ยวกับการสอบถามของคุณ...",
+      radioProduct: "สอบถามสินค้า",
+      radioPartner: "ความร่วมมือ / ตู้จำหน่าย",
+      radioOther: "อื่นๆ",
+      submitBtn: "ส่งข้อความ",
+      sending: "กำลังส่ง...",
+      successTitle: "ขอบคุณ!",
+      successMsg: "ข้อความของคุณถูกส่งเรียบร้อยแล้ว เราจะติดต่อกลับเร็วๆ นี้",
+      sendAnother: "ส่งข้อความอีกครั้ง",
+      errorMsg: "เกิดข้อผิดพลาด กรุณาส่งอีเมลถึงเราโดยตรงที่ sales@hydrationidea.com",
+      quote: '"ผิวของคุณรู้ในสิ่งที่ตาคุณไม่เห็น"'
     },
     footer: {
-      email: "contact@hydea.co",
-      instagram: "@hydea.official"
+      email: "sales@hydrationidea.com",
+      instagram: "@hydea_official"
     }
   }
 };
